@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Interactive-pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header__container _container">
+        <a href="#" class="logo">
+          <img class="logo__img" src="img/logo.png" alt="logo" />
+        </a>
+      </header>
+
+      <div class="video__container _container">
+        <img src="img/frame.svg" alt="frame" class="video__container-frame" />
+        <img
+          src="img/ellipse.png"
+          alt="ellipse"
+          class="video__container-circle"
+        />
+        <img src="img/red-dots.png" alt="dots" class="video__container-dots" />
+        <img src="img/photo.png" alt="photo" class="video__container-photo" />
+
+     
+
+
+        
+          <!-- кнопка -->
+            <div class="button-container">
+               <a href="#video1" class="shine-button">
+                <img
+                src="img/play-icon.svg"
+                alt="play-icon"
+                class="video__container-play"
+              />
+               </a>
+            </div>
+
+
+          <!-- всплывающее окно -->
+          <a href="#x" class="overlay" id="video1">
+          </a>
+            <div class="popup">
+           <iframe width="328" height="200" src="https://www.youtube.com/embed/or047P2NOjc" frameborder="0" allowfullscreen></iframe>
+               <a class="close" title="" href="index.html" onclick = "index.html(); return false;"></a>
+            </div>
+          
+
+
+
+
+  
+      <section class="text _container">
+        <h1 class="text__main-title">Фото на</h1>
+        <h1 class="text__main-string">праздник</h1>
+
+        <p class="text__paragraph">
+          Lorem ipsum dolor sit amet, consectetur <a>adipiscing elit</a>, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </section>
+
+      <div class="advantages__wrapper _container">
+        <div class="advantages__item">
+          <img src="img/advantage-1.png" alt="img" class="advantages__img" />
+          <p class="advantages__text">Безлимитная печать фото</p>
+        </div>
+        <div class="advantages__item">
+          <img src="img/advantage-2.png" alt="img" class="advantages__img" />
+          <p class="advantages__text">Фотореквизит в наличии</p>
+        </div>
+        <div class="advantages__item">
+          <img src="img/advantage-3.png" alt="img" class="advantages__img" />
+          <p class="advantages__text">Фотоотчет в электронном виде</p>
+        </div>
+        <div class="advantages__item">
+          <img src="img/advantage-4.png" alt="img" class="advantages__img" />
+          <p class="advantages__text">Цены ниже рынка</p>
+        </div>
+      </div>
+
+      <section class="slider _container">
+        <h2 class="slider__title">Фотобудки</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="img/photo1.png"
+                alt="slider-photo"
+                class="swiper-slide__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/photo2.png"
+                alt="slider-photo"
+                class="swiper-slide__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/photo3.png"
+                alt="slider-photo"
+                class="swiper-slide__img"
+              />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <div class="optoions _container">
+        <div class="options__title">
+          <h3 class="options__title-text">Фотобудка с ширмой #1</h3>
+        </div>
+        <span class="optoions__postTitle-black">Размер:</span>
+        <span class="optoions__postTitle-grey"> 2м x 1.5м x 2 м</span>
+      </div>
+
+      <div class="options-list _container">
+        <div class="options-list__tag">
+          <span>Доп. опции</span>
+        </div>
+        <div class="options-list__items">
+          <div class="options-list__item">
+            <img
+              src="img/photo-option.png"
+              alt="img"
+              class="options-list__item-image"
+            />
+            <div class="options-list__item-block">
+              <span class="options-list__item-title">Разработка макета #1</span>
+              <span class="options-list__item-price">2500 ₽</span>
+            </div>
+            <input
+              class="options-list-checkbox"
+              type="checkbox"
+              id="scales"
+              name="option"
+              checked
+            />
+          </div>
+        </div>
+        <div class="options-list__items">
+          <div class="options-list__item">
+            <img
+              src="img/photo-option.png"
+              alt="img"
+              class="options-list__item-image"
+            />
+            <div class="options-list__item-block">
+              <span class="options-list__item-title">Разработка макета #2</span>
+              <span class="options-list__item-price">3000 ₽</span>
+            </div>
+            <input
+              class="options-list-checkbox"
+              type="checkbox"
+              id="scales"
+              name="option"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="duration _container">
+        <p class="duration__title">Укажите время аренды</p>
+        <div class="duration__btns">
+          <span class="duration__btn active">1 час</span>
+          <span class="duration__btn">2 часа</span>
+          <span class="duration__btn">3 часа</span>
+          <span class="duration__btn">5 часов</span>
+          <span class="duration__btn">выставка 2 дня</span>
+          <span class="duration__btn">выставка 3 дня</span>
+        </div>
+      </div>
+
+      <div class="total-price _container">
+        <div class="total-price__price">17 000 ₽</div>
+        <a href="./pages/order.html" class="total-price__btn"
+          >Оставить заявку</a
+        >
+      </div>
+
+      <div class="show-more">
+        <a href="#" class="show-more__btn _container">Показать еще</a>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
